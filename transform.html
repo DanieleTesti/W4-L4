@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > div {
+        width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        margin-top: 100px;
+      }
+
+      div.rotate {
+        background-color: orange;
+        transform: rotate(-20deg);
+      }
+
+      div.skew {
+        background-color: lightgreen;
+        transform: skew(25deg, 20deg);
+      }
+
+      div.scale {
+        background-color: lightblue;
+      }
+
+      div.scale:hover {
+        /*QUANDO PASSI SOPRA SI INGRANDISCE DI 1.4X*/
+        transform: scale(1.5);
+      }
+
+      div.translate {
+        transform: translate(
+          80px,
+          20px
+        ); /*SPOSta DI 80PX SULL'ASSE X E 20PX SULL'ASSE DELLE Y*/
+        background-color: pink;
+      }
+
+      /*minuto 36*/
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS transform</h1>
+    <h3>Rotate</h3>
+    <div class="rotate">
+      <div>ROTATE BOX</div>
+    </div>
+    <h3>SKEW</h3>
+    <div class="skew">
+      <div>SKEW BOX</div>
+    </div>
+    <h3>SCALE</h3>
+    <div class="scale">
+      <div>SCALE BOX</div>
+    </div>
+    <h3>TRANSLATE</h3>
+    <div class="translate">
+      <div>TRANSLATE BOX</div>
+    </div>
+  </body>
+</html>
